@@ -17,7 +17,7 @@ function generateColours() {
 }
 
 
-//29.25
+
 document.addEventListener('click', event => {
     const type = event.target.dataset.type; //в dataset хранится объект всех атрибутов
 
@@ -71,7 +71,7 @@ function setTextColour(text, color) {
     text.style.color = luminance > 0.5 ? 'black' : 'white' // если luminance больше чем 0ю5, то текст получает чёртный цвет, иначе - белый.
 }
 
-//41.00
+
 function updateColorsHash(colors = []) {
     document.location.hash = colors
     .map((col) => {
