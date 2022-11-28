@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    //background-color: #fa3e38;
+
+}
+
+body,
+#siteWrapper {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+
+#siteWrapper {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #9b0500;
+    background-image:
+        //горизонтальные тонкие линии
+        repeating-linear-gradient(transparent, transparent 50px, rgba(0, 0, 0, .4) 50px, rgba(0, 0, 0, .4) 53px, transparent 53px, transparent 63px, rgba(0, 0, 0, .4) 63px, rgba(0, 0, 0, .4) 66px, transparent 66px, 
+       /*горизонтальные широкие линии  */     
+       transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px,
+       /**/ 
+       rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, 
+       rgba(0,0,0,.5) 232px, transparent 232px),
+       
+       repeating-linear-gradient(
+        270deg, transparent, transparent 50px,
+        rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px,
+        rgba(0,0,0,.4) 63px, rgba(0,0,0.4) 66px, transparent 66px, 
+
+        
+       )
+
+
+    }
