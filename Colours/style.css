@@ -10,8 +10,53 @@ body {
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(7, 1fr);
 }
+body .instructions {
+  position: fixed;
+  display: block;
+  height: 40px;
+  width: 200px;
+  margin-top: 30rem;
+  margin-left: 60rem;
+}
+body .instructions #dialog {
+  display: block;
+  justify-content: center;
+}
+body .instructions dialog::-webkit-backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px, #ccc, solid;
+  border-radius: 5px;
+}
+body .instructions dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px, #ccc, solid;
+  border-radius: 5px;
+}
+body #instructions {
+  position: absolute;
+  margin-top: 30rem;
+  margin-left: 30rem;
+  display: block;
+  height: 40px;
+  width: 200px;
+}
+body #instructions p {
+  position: -webkit-sticky;
+  position: sticky;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+body #instructions p a:link, body #instructions p a:visited, body #instructions p a:focus {
+  text-decoration: none;
+}
+body #instructions p a:hover {
+  background: whitesmoke;
+  transition: all 0.5s ease-in-out;
+}
 body .col {
-  border: 1px solid black;
+  border: none;
   flex: 1;
   display: flex;
   flex-direction: column;

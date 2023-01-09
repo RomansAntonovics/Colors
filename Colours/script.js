@@ -1,3 +1,5 @@
+
+
 const cols = document.querySelectorAll('.col');
 
 document.addEventListener('keydown', event => {
@@ -30,6 +32,7 @@ document.addEventListener('click', event => {
         node.classList.toggle('fa-lock')
     } else if (type === 'copy') {
         copyToClickboard(event.target.textContent)
+        alert("Copy done")
     }
 
 })
@@ -90,4 +93,9 @@ function getColorsFromHash(){
     }
     return []
 }
-setRandomColours(true) 
+setRandomColours(true);
+
+const openBtn = document.querySelector("#open");
+const dialog = document.querySelector("dialog");
+openBtn.onclick = () => dialog.showModal();
+

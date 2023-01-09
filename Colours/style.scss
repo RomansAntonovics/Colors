@@ -6,12 +6,54 @@
 }
 
 body {
+    
     font-family: 'Roboto', sans-serif;
     height: 100vh;
     display: grid;
     grid-template: repeat(2, 1fr)/repeat(7, 1fr);
+    .instructions {
+        position: fixed;
+    display: block;
+    height: 40px;
+    width: 200px;
+    margin-top: 30rem;
+    margin-left: 60rem;
+        #dialog{
+            display: block;
+            justify-content:center;
+            
+        }
+        dialog::backdrop{
+            background: rgba(0,0,0,0.5);
+            border: 1px, #ccc, solid;
+            border-radius: 5px;
+        }
+
+    }
+    #instructions{
+        position: absolute;
+    margin-top: 30rem;
+    margin-left: 30rem;
+    display: block;
+    height: 40px;
+    width: 200px;
+        p{ 
+            position: sticky;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            a:link, a:visited, a:focus {
+                text-decoration: none;
+            }
+            a:hover {
+                background: whitesmoke;
+                transition: all .5s ease-in-out;
+            }
+        }
+    }
     .col{
-        border: 1px solid black;
+        border: none;
         flex: 1; //задал один большой контейнер на весь экран
         //background: darkred;
         display: flex;  
