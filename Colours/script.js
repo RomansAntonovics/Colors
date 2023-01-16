@@ -97,5 +97,10 @@ setRandomColours(true);
 
 const openBtn = document.querySelector("#open");
 const dialog = document.querySelector("dialog");
+const closeBtn = document.querySelector("#close");
 openBtn.onclick = () => dialog.showModal();
+
+
+
+closeBtn.onclick = () => dialog.close();
 
